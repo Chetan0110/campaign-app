@@ -120,9 +120,9 @@ class AllCampaigns extends Component {
                                 <td>{campaign.type}</td>
                                 <td>{campaign.company}</td>
                                 <td>
-                                    <span style={{cursor: "pointer"}} onClick={(e) => this.onEditClick(e, campaign)}>Edit</span>
+                                    <span style={{cursor: "pointer", color: "blue"}} onClick={(e) => this.onEditClick(e, campaign)}>Edit</span>
                                     <span>          </span>
-                                    <span style={{cursor: "pointer"}} onClick={(e) => this.onDeleteClick(e, campaign)}>Delete</span>
+                                    <span style={{cursor: "pointer", color: "red"}} onClick={(e) => this.onDeleteClick(e, campaign)}>Delete</span>
                                 </td>
                             </tr>
                         )
