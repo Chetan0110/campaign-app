@@ -93,6 +93,7 @@ class AllCampaigns extends Component {
     }
 
     render() {
+        const that = this;
         return (
         <div style={{marginTop: "50px"}}>
             <div>
@@ -134,8 +135,9 @@ class AllCampaigns extends Component {
                     // this.state.modifiedCampaignData.length/this.state.numRowsPerPage
                     new Array((Math.ceil(this.state.modifiedCampaignData.length/10))).fill("").map((el, index) => {
                         return(
-                            <button key={index} onClick={(e) => this.onPaginationButtonClick(e)} value={index+1}
-                                style={{backgroundColor: `${this.state.activePage === index+1 ? "green" : null}`}}>{index+1}</button>
+                            <button key={index} onClick={(e) => that.onPaginationButtonClick(e)} value={index+1}
+                                className={`btn ${that.state.activePage === index+1 ? "btn-primary" : null}`}
+                            >{index+1}</button>
                         )
                     })
                 }
