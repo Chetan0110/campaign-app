@@ -1,0 +1,7 @@
+table tbody tr td th{
+    border: "1px solid grey"
+}
+
+th {
+ margin-left: "100px"
+}
